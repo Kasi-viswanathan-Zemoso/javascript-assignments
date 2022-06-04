@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font Awesome -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css"
+            rel="stylesheet"
+    />
+
+    <!-- MDB -->
+    <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
+    ></script>
+<title>Assignment 4</title>
+</head>
+<body style="background-color: #eee;">
+  <section style="background-color: #eee;">
+      <div class="container py-5">
+          <div class="col-lg-8 mx-auto py-5 mb-5 mt-5">
+              <div class="card mb-4 mb-lg-0">
+                  <div class="card-body p-0">
+                  <h5 class="my-3 text-info text-center"> Assignment 4 : Local & Session storage</h5>
+                  <hr>
+                  <ul class="list-group list-group-flush rounded-3">
+                  <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                    <label class="text-secondary" for="demo">Local Score: </label>
+                    <h2 class="text-primary" id="demo"></h2>
+                    <ul class="list-group list-group-flush rounded-3">
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                      <button class="btn btn-success" onclick="clickCounter()" type="button">+</button></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                      <button class="btn btn-warning" onclick="clickCounterN()" type="button">-</button></li>
+                    </ul>
+                    <p><button class="btn btn-danger" onclick="clearLocal()" type="button">Clear Local Storage</button></p>
+                  </li>
+                  <br>
+                  <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                    <label class="text-secondary" for="demo">Session Score: </label>
+                    <h2 class="text-primary" id="demo2">0</h2>
+                    <ul class="list-group list-group-flush rounded-3">
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                      <button class="btn btn-success" onclick="clickCounter2()" type="button">+</button></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                      <button class="btn btn-warning" onclick="clickCounter2N()" type="button">-</button></li>
+                    </ul>
+                    <p><button class="btn btn-danger" onclick="clearSession()" type="button">Clear Session Storage</button></p>
+                  </li>
+                  </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

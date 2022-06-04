@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment 2</title>
+</head>
+<body style="background-color: #eee;">
+    <script>
+        async function f() {
+            let getData = (uId) => new Promise((resolve, reject) => {
+                setTimeout(() => resolve("skc@gmail.com"), 4000)
+            })
+            
+            console.log("start");
+            var email = await getData("skc");
+            console.log("Fetched the data!");
+            console.log("Email id of the user id is: " + email);
+            console.log("end");
+        }
+        f();
+    </script>
+</body>
+</html>
